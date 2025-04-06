@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Definindo as cores */
+:root {
+  --cor-fundo-claro: #f0f0f0;
+  --cor-escura: #333; /* cor base para os textos e botões */
+  --cor-botao: #333; /* cor do botão login */
+  --cor-botao-hover: #555; /* cor de hover para o botão */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cor-fundo-claro);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.login-box {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-escura);
+  border-radius: 10px 0 0 10px;
+}
+
+.right-side {
+  flex: 1.5;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--cor-escura);
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+.options a {
+  text-decoration: none;
+  color: var(--cor-escura);
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  background-color: var(--cor-botao);
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease; /* Transição suave para o hover */
+}
+
+.btn-login:hover {
+  background-color: var(--cor-botao-hover); /* Cor de hover para o botão */
+}
+
+.register {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.register a {
+  color: var(--cor-escura);
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.logo-senac {
+  width: 80%;
+  max-width: 300px;
+  margin-top: 20px;
+}

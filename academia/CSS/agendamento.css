@@ -1,0 +1,40 @@
+.bg-gold {
+    background-color: #333; /* Cor dourada */
+    color: #fff;
+}
+
+.btn-gold {
+    background-color: #333; /* Cor dourada */
+    color: #fff;
+    border: none;
+}
+
+.btn-gold:hover {
+    background-color: #e6b005; /* Tonalidade um pouco mais escura ao passar o mouse */
+    color: #fff;
+}
+
+/* Estilos para a seção do Mapa */
+.map-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.map-container {
+    border: 5px solid #333;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.map-container iframe {
+    border: none;
+}
+
+/*Responsividade*/
+@media (max-width: 800px) {
+    .map-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

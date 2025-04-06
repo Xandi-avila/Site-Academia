@@ -1,0 +1,55 @@
+.admin-info {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.admin-info h3 {
+    color: #333;
+}
+
+.admin-options h4 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.admin-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-options li {
+    margin-bottom: 10px;
+}
+
+.admin-options a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.admin-options a:hover {
+    color: #E4405F;
+}
+
+
+.admin-link {
+    display: none;
+}
+
+.logged-in .admin-link {
+    display: inline-block;
+}
+
+.admin-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+

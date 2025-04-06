@@ -1,0 +1,57 @@
+#professores {
+  text-align: center;
+  padding: 20px;
+}
+
+.tituloP {
+  font-size: 2em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.professor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.professor:nth-child(even) .professor-img {
+  margin-left: 20px;
+  order: 2;
+}
+
+.professor-img {
+  width: 40%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.descricao {
+  max-width: 60%;
+  text-align: center;
+}
+
+.descricao h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.descricao p {
+  margin-top: 25px;
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+#professores .professor-instagram {
+  color: #333;
+}
+
+#professores .professor-instagram:hover {
+  color: #E4405F;
+}

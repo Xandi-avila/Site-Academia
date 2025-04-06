@@ -1,0 +1,181 @@
+/*Seção Professores*/
+.container{
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.tituloP{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#professores {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.cardsProf {
+    display: flex; /* Define um layout flexível */
+    flex-wrap: wrap; /* Permite que os itens flexíveis quebrem em várias linhas */
+    justify-content: center;
+    gap: 30px; /* Adiciona um espaçamento de 30px entre os itens */
+}
+
+.card {   
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao redor do card */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para transformações */
+    background-color: #333;
+    color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Move o card 10px para cima quando hover */
+}
+
+.card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Corta a imagem para caber no espaço definido */
+    border-top-left-radius: 8px; /* Arredonda os cantos superiores esquerdos */
+    border-top-right-radius: 8px; /* Arredonda os cantos superiores direitos */
+}
+
+.corpoCard {
+    padding: 20px;
+    color: #fff;
+}
+
+.tituloCard {
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.textoCard {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/*Seção dos Treinos*/
+.secTrein {
+    padding: 20px;
+}
+
+.treinosAll {
+    display: flex; /* Define um layout flexível */
+    flex-wrap: wrap; /* Permite que os itens flexíveis quebrem em várias linhas */
+    justify-content: space-between;
+}
+
+.treino {    
+    flex: 0 1 calc(33.33% - 10px); /* Define que o item ocupa 33.33% da largura do container, menos 10px */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Adiciona cantos arredondados */
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao redor do card */
+}
+
+.treinoTitulo {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.treinoInfo {
+    display: flex; /* Define um layout flexível */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+}
+
+.treinoInfo div {
+    display: flex; /* Define um layout flexível */
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.treinoInfo i {
+    margin-right: 10px;
+    color: #000;
+}
+
+.treinoInfo p {
+    margin: 0;
+}
+
+.treino .baixa-intensidade {
+    color: #FF3B30;
+}
+
+.treino .media-intensidade {
+    color: #FFCC00;
+}
+
+.treino .alta-intensidade {
+    color: #34C759;
+}
+
+/* Responsividade para Professores */
+@media (max-width: 800px) {
+    .cardsProf {
+        justify-content: center;
+    }
+
+    .card {
+        width: calc(50% - 15px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
+
+/* Responsividade para Treinos */
+@media (max-width: 800px) {
+    .treinosAll {
+        justify-content: center;
+    }
+
+    .treino {
+        flex: 0 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .treino {
+        flex: 0 1 100%;
+    }
+}
+
+/* Responsividade para Mapa */
+@media (max-width: 800px) {
+    .map-section {
+        flex-direction: column-reverse;
+    }
+
+    .info {
+        margin: 0;
+        padding: 20px 10px;
+    }
+
+    .map-container {
+        margin: 0;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .map-container {
+        height: 300px;
+    }
+}

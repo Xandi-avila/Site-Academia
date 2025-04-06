@@ -1,0 +1,87 @@
+CREATE DATABASE senac_boxe;
+
+USE senac_boxe;
+
+CREATE TABLE niveis_acesso (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nivel_nome VARCHAR(50) NOT NULL,
+    descricao TEXT,  -- Descrição opcional sobre o nível de acesso
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO niveis_acesso (nivel_nome, descricao) VALUES
+('admin', 'Administrador com acesso completo a todas as funcionalidades'),
+('professor', 'Professor com acesso aos seus agendamentos e dados'),
+('comum', 'Usuário comum com acesso limitado a agendamentos e conteúdos públicos');
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    nivel_acesso_id INT DEFAULT 3,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (nivel_acesso_id) REFERENCES niveis_acesso(id) 
+);
+
+CREATE TABLE professores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT,
+    nome VARCHAR(100) NOT NULL,
+    especialidade VARCHAR(100),
+    descricao TEXT,
+    foto VARCHAR(255),
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id) 
+);
+
+CREATE TABLE agendamentos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT,
+    professor_id INT,
+    data_agendamento DATETIME NOT NULL,
+    duracao INT NOT NULL, 
+    status ENUM('confirmado', 'pendente', 'cancelado') DEFAULT 'pendente',
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
+    FOREIGN KEY (professor_id) REFERENCES professores(id) 
+);
+
+CREATE TABLE espaco (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    localizacao VARCHAR(255),
+    foto VARCHAR(255),
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    preco DECIMAL(10, 2) NOT NULL,
+    imagem VARCHAR(255),
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE pedidos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT, 
+    data_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status ENUM('pendente', 'em processamento', 'enviado', 'entregue') DEFAULT 'pendente',
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE pedido_produto (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pedido_id INT,
+    produto_id INT,
+    quantidade INT NOT NULL,
+    preco_unitario DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (pedido_id) REFERENCES pedidos(id),
+    FOREIGN KEY (produto_id) REFERENCES produtos(id)
+);
+
+INSERT INTO usuarios (nome, email, senha, nivel_acesso_id)
+VALUES ('Admin', 'admin@senacboxe.com', SHA2('admin', 256), 1);

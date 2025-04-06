@@ -1,0 +1,41 @@
+/* Estilo da seção de compras */
+
+.container h2.text-center {
+  color: #333 !important;
+}
+
+h2.text-center.text-danger {
+  color: #333;
+}
+
+.card-title {
+  color: #333;
+}
+
+.card-body h4.card-text {
+  color: #333 !important;
+}
+
+.card-text.text-danger {
+  color: #333;
+}
+
+.btn-danger {
+  background-color: #333;
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+#total {
+  color: #333 !important;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}

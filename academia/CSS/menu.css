@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    background-color: whitesmoke;
+}
+
+/* Menu */
+#nav{
+    margin: 0% auto;
+width: 90%;
+}
+
+header{
+    background-color: #333;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    height: 130px;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Logo no canto esquerdo */
+#menu .logo {
+    height: 100px;
+    width: auto;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; 
+    justify-content: center;
+}
+
+#menu ul li {
+    margin: 0 15px; 
+}
+
+#menu ul .login {
+    margin-left: auto; 
+}
+
+#menu ul li a:visited,
+#menu ul li a:link {
+    padding: 15px 5px;
+    padding-bottom: 3px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+/* Efeito hover nos itens do menu, exceto no login */
+#menu ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Ícone de login sem efeito de hover */
+.login-icon {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-bottom: none;
+    transition: none;
+}
+
+/* Remove o efeito de hover do ícone de login */
+.login-icon:hover {
+    border-bottom: none;
+    color: #fff;
+}
+
+label[for="bt_menu"]{
+	padding: 5px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	height: 50px;
+}
+
+#bt_menu{
+	display: none;
+}
+
+label[for="bt_menu"]{
+	display: none;
+}
+
+/*Seção do Mapa */
+#tituloP{
+    margin-top: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.map-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens flexíveis quebrem em várias linhas */
+    text-align: center;
+}
+
+.info {
+    margin-left: 10%;
+    flex: 1 1 40%; /* Define que o item ocupa 40% da largura do container */
+    padding: 20px;
+    text-align: left;
+}
+
+.map-container {
+    margin-right: 10%;
+    flex: 1 1 50%; /* Define que o item ocupa 50% da largura do container */
+    border: 5px solid #333;
+    border-radius: 10px;
+    margin-left: auto;
+    max-width: 600px
+}
+
+.map-container iframe {
+    border: none;
+    width: 100%;
+    height: 450px;
+}
+
+/*Footer*/
+.footer-linha-container {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+}
+
+.linkesq{
+    margin-left: -80%;
+}
+
+.linkdir{
+    margin-left: -30px;
+    margin-right: 50px;
+}
+
+.footer-menu {
+    align-self: center; 
+    margin-left: 60px;
+
+}
+
+.footer-links > div {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-links li {
+    margin-bottom: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-linha-container {
+	background-color: #333;
+	padding: 10px 0;
+}
+
+footer {
+	text-align: center;
+}
+
+#divfooter {
+	background-color: #333;
+	padding: 20px 0;
+	color: #333;
+}
+
+#divfim {
+	background-color: #333;
+	padding: 10px 0;
+	color: #fff;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Efeito de hover nas redes sociais */
+.social-icon:hover {
+    color: #3b5998; 
+}
+
+.social-icon.twitter:hover {
+    color: #1da1f2;
+}
+
+.social-icon.instagram:hover {
+    color: #e4405f;
+}
+
+.social-icon.linkedin:hover {
+    color: #0077b5;
+}
+
+.social-icon.youtube:hover {
+    color: #ff0000;
+}
+
+#divfim p {
+	margin: 0;
+	color: #fff;
+}
+
+/*Responsividade*/
+/*Menu*/
+@media (max-width: 790px) {
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 130px;
+        right: 0; /* Inicia fora da tela à direita */
+        width: 100%;
+        background-color: #333;
+        z-index: 99;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    #menu ul li {
+        margin: 10px 0;
+    }
+
+    #bt_menu {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 100;
+        width: 30px;
+        height: 25px;
+    }
+
+    #bt_menu:checked + label + #menu ul {
+        transform: translateX(0); /* Quando o menu for exibido, ele vem da direita para a esquerda */
+        opacity: 1;
+    }
+
+    label[for="bt_menu"] {
+        display: block;
+        padding: 5px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 100;
+    }
+
+    .login-icon {
+        position: absolute;
+        top: 15px;
+        right: 70px;
+    }
+
+    label[for="bt_menu"]:before {
+        content: none;
+    }
+
+    /*Footer*/
+    .footer-links > div {
+        gap: 15px;
+    }
+
+    .footer-links ul {
+        gap: 5px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .linkesq, .linkdir, .footer-menu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+    
