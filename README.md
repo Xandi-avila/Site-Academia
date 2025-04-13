@@ -37,7 +37,7 @@ Este projeto é um sistema completo para uma academia de lutas, desenvolvido com
 
 ![Gerenciamento de Usuarios](academia/Imagens/usuarios.png)
 
-![Editar Agendamentos](academia/Imagens/agendamentoedicao.png)+
+![Editar Agendamentos](academia/Imagens/agendamentoedicao.png)
 
 ![Editar produtos da loja](academia/Imagens/edicaoloja.png)
 
