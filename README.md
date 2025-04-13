@@ -21,6 +21,14 @@ Este projeto é um sistema completo para uma academia de lutas, desenvolvido com
 - **Banco de Dados:** MySQL  
 - **Front-end:** HTML5, CSS3, JavaScript (eventuais interações ou validações)  
 - **Administração e Relatórios:** Implementado com PHP e formulários interativos
+  
+---
+
+🚧 **Desafios enfrentados:**
+- Gerenciar sessões de login seguras em PHP
+- Trabalhar com layout responsivo mesmo com HTML/CSS puros
+- Implementar operações no banco de dados usando comandos SQL seguros e otimizados
+
 ---
 
 ## 📸 Capturas de Tela
@@ -40,13 +48,6 @@ Este projeto é um sistema completo para uma academia de lutas, desenvolvido com
 ![Editar Agendamentos](academia/Imagens/agendamentoedicao.png)
 
 ![Editar produtos da loja](academia/Imagens/edicaoloja.png)
-
----
-
-🚧 **Desafios enfrentados:**
-- Gerenciar sessões de login seguras em PHP
-- Trabalhar com layout responsivo mesmo com HTML/CSS puros
-- Implementar operações no banco de dados usando comandos SQL seguros e otimizados
 
 ---
 
