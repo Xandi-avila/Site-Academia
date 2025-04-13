@@ -1,4 +1,4 @@
-🏋️‍♂️ Sistema de Gestão – Academia de Lutas
+# 🏋️‍♂️ Sistema de Gestão – Academia de Lutas
 
 Este projeto é um sistema completo para uma academia de lutas, desenvolvido com PHP e MySQL. Nele, estão implementadas funcionalidades que vão desde o agendamento de aulas, cadastro e gerenciamento de professores, atualização de imagens e preços da loja, até uma área administrativa para gerenciar a academia e coletar feedbacks dos alunos.
 
