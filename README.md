@@ -27,9 +27,9 @@ Este projeto é um sistema completo para uma academia de lutas, desenvolvido com
 
 Abaixo, alguns exemplos da interface:
 
-![Tela de Agendamento](academia/imagens/espaco1.jpg)
-![Área Administrativa](academia/imagens/administrativo.png)
-![Feedback dos Alunos](academia/imagens/feedback.png)
+![Tela de Agendamento](academia/Imagens/espaco1.jpg)
+![Área Administrativa](academia/Imagens/administrativo.png)
+![Feedback dos Alunos](academia/Imagens/feedback.png)
 
 ---
 
