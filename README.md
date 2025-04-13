@@ -1,4 +1,4 @@
-# 🏋️‍♂️ Sistema de Gestão – Academia de Lutas
+![agendamento 1](https://github.com/user-attachments/assets/364ffb83-0427-491b-8607-7748d6bfddbf)# 🏋️‍♂️ Sistema de Gestão – Academia de Lutas
 
 Este projeto é um sistema completo para uma academia de lutas, desenvolvido com PHP e MySQL. Nele, estão implementadas funcionalidades que vão desde o agendamento de aulas, cadastro e gerenciamento de professores, atualização de imagens e preços da loja, até uma área administrativa para gerenciar a academia e coletar feedbacks dos alunos.
 
@@ -25,11 +25,21 @@ Este projeto é um sistema completo para uma academia de lutas, desenvolvido com
 
 ## 📸 Capturas de Tela
 
-Abaixo, alguns exemplos da interface:
+![Tela de Agendamento](academia/Imagens/agendamento1.jpg)
 
-![Tela de Agendamento](academia/Imagens/espaco1.jpg)
+![Tela de agendamento sem login](academia/Imagens/agendamento2.jpg)
+
 ![Área Administrativa](academia/Imagens/administrativo.png)
-![Feedback dos Alunos](academia/Imagens/feedback.png)
+
+![Feedback dos Alunos](academia/Imagens/experiencia.png)
+
+![Tela de Login](academia/Imagens/TelaLogin.png)
+
+![Gerenciamento de Usuarios](academia/Imagens/usuarios.png)
+
+![Editar Agendamentos](academia/Imagens/agendamentoedicao.png)+
+
+![Editar produtos da loja](academia/Imagens/edicaoloja.png)
 
 ---
 
