@@ -33,7 +33,7 @@ Este projeto é um sistema completo para uma academia de lutas, desenvolvido com
 
 ![Feedback dos Alunos](academia/Imagens/experiencia.png)
 
-![Tela de Login](academia/Imagens/Tela Login.png)
+![Tela de Login](academia/Imagens/TelaLogin.png)
 
 ![Gerenciamento de Usuarios](academia/Imagens/usuarios.png)
 
