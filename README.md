@@ -25,9 +25,9 @@ Este projeto é um sistema completo para uma academia de lutas, desenvolvido com
 
 ## 📸 Capturas de Tela
 
-![Tela de Agendamento](academia/Imagens/agendamento1.jpg)
+![Tela de Agendamento](academia/Imagens/agendamento1.png)
 
-![Tela de agendamento sem login](academia/Imagens/agendamento2.jpg)
+![Tela de agendamento sem login](academia/Imagens/Agendamento2.png)
 
 ![Área Administrativa](academia/Imagens/administrativo.png)
 
