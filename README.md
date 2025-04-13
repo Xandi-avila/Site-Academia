@@ -26,7 +26,7 @@ Este projeto é um sistema completo para uma academia de lutas, desenvolvido com
 
 ⚙️ **Desafios enfrentados:**
 - Gerenciar sessões de login seguras em PHP
-- Trabalhar com layout responsivo mesmo com HTML/CSS puros
+- Customizar e adaptar o layout responsivo com Bootstrap
 - Implementar operações no banco de dados usando comandos SQL seguros e otimizados
 
 ---
