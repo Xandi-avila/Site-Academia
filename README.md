@@ -25,15 +25,15 @@ Este projeto é um sistema completo para uma academia de lutas, desenvolvido com
 
 ## 📸 Capturas de Tela
 
+![Tela de Login](academia/Imagens/TelaLogin.png)
+
+![Área Administrativa](academia/Imagens/administrativo.png)
+
 ![Tela de Agendamento](academia/Imagens/agendamento1.png)
 
 ![Tela de agendamento sem login](academia/Imagens/Agendamento2.png)
 
-![Área Administrativa](academia/Imagens/administrativo.png)
-
 ![Feedback dos Alunos](academia/Imagens/experiencia.png)
-
-![Tela de Login](academia/Imagens/TelaLogin.png)
 
 ![Gerenciamento de Usuarios](academia/Imagens/usuarios.png)
 
