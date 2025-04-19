@@ -19,7 +19,7 @@ Este projeto é um sistema completo para uma academia de lutas, desenvolvido com
 
 - **Back-end:** PHP 7.x/8.x  
 - **Banco de Dados:** MySQL  
-- **Front-end:** HTML5, CSS3, Bootstrap, JavaScript (eventuais interações ou validações)  
+- **Front-end:** HTML, CSS, Bootstrap, JavaScript (eventuais interações ou validações)  
 - **Administração e Relatórios:** Implementado com PHP e formulários interativos
   
 ---
